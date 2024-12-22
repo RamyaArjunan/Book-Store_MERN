@@ -21,7 +21,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     try {
-      await axios.post('https://book-store-b8k4.onrender.com/books', data);
+      await axios.post('http://localhost:3000/books', data);
       setLoading(false);
       enqueueSnackbar('Book Created successfully', { variant: 'success' });
       navigate('/');
